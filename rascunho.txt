@@ -1,0 +1,14 @@
+npm test
+
+npx cypress install --force
+npx cypress open
+npm install --save cypress-get-table
+Data,Valor,Tipo,Data de Pagamento, Por quantas ações
+            const tabela = cy.get('table').getTable()
+            cy.log(tabela)
+			
+			https://cwi.com.br/blog/testes-automatizados-cypress-e-cucumber/
+			
+			https://tableless.com.br/testando-aplicacoes-com-cypress/
+			
+			https://www.npmjs.com/package/cypress-get-table

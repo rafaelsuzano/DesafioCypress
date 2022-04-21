@@ -1,0 +1,171 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-21T17:07:33.343Z",
+    "end": "2022-04-21T17:08:20.675Z",
+    "duration": 47332,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8b7a768d-cc8c-41b1-8b60-1da962dd45ac",
+      "title": "",
+      "fullFile": "cypress/integration/PoC/PoC.js",
+      "file": "cypress/integration/PoC/PoC.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4240222-2088-42b7-9ae1-f6a7f71415ec",
+          "title": "PoC",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acesso Fundamentos",
+              "fullTitle": "PoC Acesso Fundamentos",
+              "timedOut": null,
+              "duration": 5161,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://fundamentus.com.br');",
+              "err": {},
+              "uuid": "9bfa1a8e-429a-44df-8471-c7439f85eaba",
+              "parentUUID": "a4240222-2088-42b7-9ae1-f6a7f71415ec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Consulta Ativo",
+              "fullTitle": "PoC Consulta Ativo",
+              "timedOut": null,
+              "duration": 4292,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#completar').click();\ncy.get('#completar').type('{backspace}');\ncy.get('#completar').type('{backspace}');\ncy.get('#completar').type('PETR4');\ncy.get('.autocompleter-selected').click();\ncy.get('.botao').click();",
+              "err": {},
+              "uuid": "5733263f-5ebf-49e4-9f82-b768bdbe938d",
+              "parentUUID": "a4240222-2088-42b7-9ae1-f6a7f71415ec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Consulta Proventos",
+              "fullTitle": "PoC Consulta Proventos",
+              "timedOut": null,
+              "duration": 3191,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://fundamentus.com.br/proventos.php?papel=PETR4&tipo=2');",
+              "err": {},
+              "uuid": "5ddaaf61-4d4b-4fbb-9e30-2d289b3de989",
+              "parentUUID": "a4240222-2088-42b7-9ae1-f6a7f71415ec",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Gerar CSV",
+              "fullTitle": "PoC Gerar CSV",
+              "timedOut": null,
+              "duration": 30829,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Screenshot\",\n        \"value\": \"\\\\PoC\\\\PoC.js\\\\teste.png\"\n      }\n    ]\n  ]\n}",
+              "code": "cy.visit('https://www.uol.com.br');\ncy.screenshot(\"teste\");",
+              "err": {},
+              "uuid": "ea67453f-cea3-4288-9565-e6b29043aaa2",
+              "parentUUID": "a4240222-2088-42b7-9ae1-f6a7f71415ec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9bfa1a8e-429a-44df-8471-c7439f85eaba",
+            "5733263f-5ebf-49e4-9f82-b768bdbe938d",
+            "5ddaaf61-4d4b-4fbb-9e30-2d289b3de989",
+            "ea67453f-cea3-4288-9565-e6b29043aaa2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 43473,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "reportFilename": "report",
+        "charts": true,
+        "reportPageTitle": "Desafio Cypress",
+        "quite": true,
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "saveAllAttempts": true,
+        "screenshotOnRunFailure": false,
+        "screenshotsFolder": "cypress/reports/mochareports/assets",
+        "defaultCommandTimeout": 60000
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+
+{
+  "projectId": "jjxsck",
+
+
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "reporterEnabled": "mochawesome",
+      "mochawesomeReporterOptions": {
+        "reportDir": "cypress/reports/mocha",
+        "reportFilename": "report",
+        "charts": true,
+        "reportPageTitle": "Desafio Cypress",
+        "quite": true,
+        "overwrite": true,
+        "html": true,
+        "json": true,
+               "saveAllAttempts":true,
+        "screenshotOnRunFailure": false,
+        "screenshotsFolder":"cypress/reports/mochareports/assets",
+    "defaultCommandTimeout":60000 }
+        
+
+      }
+    }
