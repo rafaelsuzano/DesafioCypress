@@ -1,7 +1,7 @@
 
 
 
-describe('PoC', () => {
+describe.skip('PoC', () => {
         it('Acesso Fundamentos', () => {
           cy.visit('https://fundamentus.com.br')
 
@@ -31,6 +31,19 @@ describe('PoC', () => {
           cy.screenshot("teste")
        
         }
+
+        
         )
+             
+      
+      })
+
+      describe('PoC', () => {
+        it('Acesso Fundamentos', () => {
+          cy.Commands.add("python teste.py");
+
+        }     )
+
+
         
       })
