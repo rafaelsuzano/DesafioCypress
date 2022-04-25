@@ -1,6 +1,7 @@
 
 {
   "projectId": "jjxsck",
+  "baseUrl": "https://fundamentus.com.br",
 
 
     "reporter": "cypress-multi-reporters",
@@ -16,7 +17,7 @@
         "html": true,
         "json": true,
                "saveAllAttempts":true,
-        "screenshotOnRunFailure": false,
+        "screenshotOnRunFailure": true,
         "screenshotsFolder":"cypress/reports/mochareports/assets",
     "defaultCommandTimeout":60000 }
         
